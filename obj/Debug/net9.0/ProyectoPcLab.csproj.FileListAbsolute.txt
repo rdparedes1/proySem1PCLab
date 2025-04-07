@@ -1,0 +1,14 @@
+C:\Users\ruben\OneDrive\Documentos\pc-programa\proyPCLab1Semestre\ProyectoPcLab\obj\Debug\net9.0\ProyectoPcLab.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ruben\OneDrive\Documentos\pc-programa\proyPCLab1Semestre\ProyectoPcLab\obj\Debug\net9.0\ProyectoPcLab.AssemblyInfoInputs.cache
+C:\Users\ruben\OneDrive\Documentos\pc-programa\proyPCLab1Semestre\ProyectoPcLab\obj\Debug\net9.0\ProyectoPcLab.AssemblyInfo.cs
+C:\Users\ruben\OneDrive\Documentos\pc-programa\proyPCLab1Semestre\ProyectoPcLab\obj\Debug\net9.0\ProyectoPcLab.csproj.CoreCompileInputs.cache
+C:\Users\ruben\OneDrive\Documentos\pc-programa\proyPCLab1Semestre\ProyectoPcLab\bin\Debug\net9.0\ProyectoPcLab.exe
+C:\Users\ruben\OneDrive\Documentos\pc-programa\proyPCLab1Semestre\ProyectoPcLab\bin\Debug\net9.0\ProyectoPcLab.deps.json
+C:\Users\ruben\OneDrive\Documentos\pc-programa\proyPCLab1Semestre\ProyectoPcLab\bin\Debug\net9.0\ProyectoPcLab.runtimeconfig.json
+C:\Users\ruben\OneDrive\Documentos\pc-programa\proyPCLab1Semestre\ProyectoPcLab\bin\Debug\net9.0\ProyectoPcLab.dll
+C:\Users\ruben\OneDrive\Documentos\pc-programa\proyPCLab1Semestre\ProyectoPcLab\bin\Debug\net9.0\ProyectoPcLab.pdb
+C:\Users\ruben\OneDrive\Documentos\pc-programa\proyPCLab1Semestre\ProyectoPcLab\obj\Debug\net9.0\ProyectoPcLab.dll
+C:\Users\ruben\OneDrive\Documentos\pc-programa\proyPCLab1Semestre\ProyectoPcLab\obj\Debug\net9.0\refint\ProyectoPcLab.dll
+C:\Users\ruben\OneDrive\Documentos\pc-programa\proyPCLab1Semestre\ProyectoPcLab\obj\Debug\net9.0\ProyectoPcLab.pdb
+C:\Users\ruben\OneDrive\Documentos\pc-programa\proyPCLab1Semestre\ProyectoPcLab\obj\Debug\net9.0\ProyectoPcLab.genruntimeconfig.cache
+C:\Users\ruben\OneDrive\Documentos\pc-programa\proyPCLab1Semestre\ProyectoPcLab\obj\Debug\net9.0\ref\ProyectoPcLab.dll
