@@ -1,5 +1,6 @@
 ﻿class ProyectoPcLab {
     static void Main(){
+        // definimos las características del jugador
         string nombrePlayer = "";
         int hpPlayer = 0;
         int atqPlayer = 0;
@@ -11,6 +12,7 @@
         Random rnd = new Random();
         int eleccionOpcionCombate = 0;
         Enemigo enemigoAc = new Enemigo();
+        //Menu de elección de personaje.
         Console.WriteLine(@"Bienvenido al simulador de aventuras:
                             Elige una clase:
                             1) Mago 
@@ -19,7 +21,7 @@
                             (escribe la opción con números) ");
         int opcion = (int.Parse(Console.ReadLine()));
         //Console.WriteLine("Opción elegida: " + opcion);
-        
+        // clases de los jugadores mago, caballero y arquero
         switch(opcion){
             case 1:
             nombrePlayer = "Mago";
@@ -38,6 +40,7 @@
                 break;
         }
 
+        //Menú de elección de camino para la aventura
         Console.WriteLine(@"Elija un camino:
             1. Bosque oscuro
             2. Cueva sombría
@@ -55,14 +58,17 @@
             Console.WriteLine("Elegiste el Camino de piedra");
                 break;
         }
+        // ciclo de continuar la partida
         while(continuar){
             Console.WriteLine($"Personaje elegido: {nombrePlayer}, puntos de salud actuales: {hpPlayer}, puntos de poder: {atqPlayer}, enemigos derrotados {kills} y el camino elegido es {camino}");
             Console.WriteLine(@"¿Quieres continuar la aventura?
                                 1) si
                                 2) no");
             continuar1 = (int.Parse(Console.ReadLine()));
+            //Ciclo de luchas hasta la derrota del jugador o hasta la victoria de este.
             if(continuar1 == 1){
                 continuar = true;
+                //En base a la cantidad de enemigos derrotados se asigna a un enemigo contra el que se luchara.
                 switch(kills){
                     case 0:
                         enemigoAc.setNombreEnemigo("Bandido");
@@ -83,6 +89,7 @@
                         enemigoAc.setAtqEnemigo(rnd.Next(30,51));
                         break;
                 }
+                // menú de inicio de combate
                 Console.WriteLine(@"Hay un nuevo oponente, ¿Quieres iniciar el combate?.
                                     Seleccione una opción:
                                     1. Luchar
@@ -98,6 +105,7 @@
                             hpPlayer = hpPlayer - enemigoAc.getAtqEnemigo();
                         }
                     }
+                    // condición de kills y cofres
                     if(hpPlayer > 0 && kills < 3){
                         Console.WriteLine("Has ganado el combate contra " + enemigoAc.getNombreEnemigo());
                         kills++;
@@ -113,6 +121,7 @@
                         abrirCofre = int.Parse(Console.ReadLine());
                         if(abrirCofre == 1){
                             probabilidadCofres = rnd.Next(101);
+                            //Esto varia con el camino número 2, así que hay una posibilidad más al momento de abrir el cofre.
                             if(camino == 2){
                                 if(probabilidadCofres <= 25){
                                     Console.WriteLine("El cofre contenia energía, obtienes 10 de vida extra");
@@ -140,7 +149,8 @@
                                     hpPlayer = hpPlayer - 5;
                                 }                           
                             }
-                        }          
+                        }    
+                        // condición en el caso la vida del jugador llegue a cero      
                     } else if (hpPlayer <= 0) {
                         Console.WriteLine("Ha muerto, fin del juego");
                         continuar = false;
@@ -148,6 +158,7 @@
                         Console.WriteLine("Has ganado el juego, fin del juego.");
                         continuar = false;
                     }
+                    // condición de huida
                 } else if(eleccionOpcionCombate == 2) {
                     Console.WriteLine("Has huido del combate, pero pierdes 10 de hp");
                     hpPlayer = hpPlayer - 10;
@@ -156,6 +167,7 @@
                         continuar = false;
                     }
                 }
+                // en el caso se decida acabar la partida 
             } else if (continuar1 == 2) {
                 Console.WriteLine("Ha decidido abandonar la aventura, fin del juego.");
                 continuar = false;
@@ -165,6 +177,7 @@
     } 
 }
 
+//Clase de enemigo, usada por medio de instancia en el metodo main.
 public class Enemigo {
     private string nombreEnemigo;
     private int hpEnemigo;
