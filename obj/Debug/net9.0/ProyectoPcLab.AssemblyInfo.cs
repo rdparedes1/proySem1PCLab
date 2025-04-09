@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ProyectoPcLab")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+56e5d0f01f6a14340dc880fd73985b897d628073")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+14f4f22b8cfd50f1f05bb9b6ce0ce77a2d712610")]
 [assembly: System.Reflection.AssemblyProductAttribute("ProyectoPcLab")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ProyectoPcLab")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

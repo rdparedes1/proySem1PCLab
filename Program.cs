@@ -25,7 +25,7 @@
         switch(opcion){
             case 1:
             nombrePlayer = "Mago";
-            hpPlayer = 1000;
+            hpPlayer = 100;
             atqPlayer = 20;
                 break;
             case 2:
@@ -99,10 +99,20 @@
                     while(0 < hpPlayer && 0 < enemigoAc.getHpEnemigo()){
                         if(camino == 2){
                             hpPlayer = hpPlayer - enemigoAc.getAtqEnemigo();
+                            Console.WriteLine("El enemigo ha atacado, con un poder de ataque de: " + enemigoAc.getAtqEnemigo() + ", vida restante del jugador: " + hpPlayer);
+                            if(hpPlayer <= 0){
+                                break;
+                            }
                             enemigoAc.setHpEnemigo(enemigoAc.getHpEnemigo() - atqPlayer);
+                            Console.WriteLine("El jugador ha atacado, con un poder de ataque de: " + atqPlayer + ", vida restante del enemigo: " + enemigoAc.getHpEnemigo());
                         } else {
                             enemigoAc.setHpEnemigo(enemigoAc.getHpEnemigo() - atqPlayer);
+                            Console.WriteLine("El jugador ha atacado, con un poder de ataque de: " + atqPlayer + ", vida restante del enemigo: " + enemigoAc.getHpEnemigo());
+                            if(enemigoAc.getHpEnemigo() <= 0){
+                                break;
+                            }
                             hpPlayer = hpPlayer - enemigoAc.getAtqEnemigo();
+                            Console.WriteLine("El enemigo ha atacado, con un poder de ataque de: " + enemigoAc.getAtqEnemigo() + ", vida restante del jugador: " + hpPlayer);
                         }
                     }
                     // condición de kills y cofres
