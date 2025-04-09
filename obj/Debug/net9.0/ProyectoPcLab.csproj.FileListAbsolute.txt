@@ -12,3 +12,4 @@ C:\Users\ruben\OneDrive\Documentos\pc-programa\proyPCLab1Semestre\ProyectoPcLab\
 C:\Users\ruben\OneDrive\Documentos\pc-programa\proyPCLab1Semestre\ProyectoPcLab\obj\Debug\net9.0\ProyectoPcLab.pdb
 C:\Users\ruben\OneDrive\Documentos\pc-programa\proyPCLab1Semestre\ProyectoPcLab\obj\Debug\net9.0\ProyectoPcLab.genruntimeconfig.cache
 C:\Users\ruben\OneDrive\Documentos\pc-programa\proyPCLab1Semestre\ProyectoPcLab\obj\Debug\net9.0\ref\ProyectoPcLab.dll
+C:\Users\ruben\OneDrive\Documentos\pc-programa\proyPCLab1Semestre\ProyectoPcLab\obj\Debug\net9.0\ProyectoPcLab.sourcelink.json

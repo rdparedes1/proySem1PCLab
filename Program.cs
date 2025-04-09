@@ -23,7 +23,7 @@
         switch(opcion){
             case 1:
             nombrePlayer = "Mago";
-            hpPlayer = 100;
+            hpPlayer = 1000;
             atqPlayer = 20;
                 break;
             case 2:
@@ -101,6 +101,11 @@
                     if(hpPlayer > 0 && kills < 3){
                         Console.WriteLine("Has ganado el combate contra " + enemigoAc.getNombreEnemigo());
                         kills++;
+                        if(kills == 3) {
+                            continuar = false;
+                            Console.WriteLine("Ha ganado los combates fin del juego");
+                            break;
+                        }
                         Console.WriteLine(@"Ha aparecido un cofre misterioso. ¿Quiere abrirlo?
                                             1. Abrir
                                             2. Dejar cerrado
@@ -143,7 +148,7 @@
                         Console.WriteLine("Has ganado el juego, fin del juego.");
                         continuar = false;
                     }
-                } else if(continuar1 == 2) {
+                } else if(eleccionOpcionCombate == 2) {
                     Console.WriteLine("Has huido del combate, pero pierdes 10 de hp");
                     hpPlayer = hpPlayer - 10;
                     if (hpPlayer <= 0){
@@ -151,8 +156,12 @@
                         continuar = false;
                     }
                 }
+            } else if (continuar1 == 2) {
+                Console.WriteLine("Ha decidido abandonar la aventura, fin del juego.");
+                continuar = false;
             }
         }
+
     } 
 }
 
