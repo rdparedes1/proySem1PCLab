@@ -121,8 +121,8 @@
                         abrirCofre = int.Parse(Console.ReadLine());
                         if(abrirCofre == 1){
                             probabilidadCofres = rnd.Next(101);
-                            //Esto varia con el camino número 2, así que hay una posibilidad más al momento de abrir el cofre.
-                            if(camino == 2){
+                            //Esto varia con el camino número 3, así que hay una posibilidad más al momento de abrir el cofre.
+                            if(camino == 3){
                                 if(probabilidadCofres <= 25){
                                     Console.WriteLine("El cofre contenia energía, obtienes 10 de vida extra");
                                     hpPlayer = hpPlayer + 10;
